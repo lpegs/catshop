@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'milky_coffeeregular';
+    src: url('../font/milky_coffee-webfont.woff2') format('woff2'),
+         url('../font/milky_coffee-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #000;
+    font-family: 'milky_coffeeregular';
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content {
+    width: 100%;
+    height: 400vh;
+}
+
+.header {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headerText {
+    width: 10%;
+    color: #fff;
+    font-size: 15rem;
+    position: absolute;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-right: 45%;
+}
+
+.headerImage {
+    height: 90%;
+    margin-left: 23%;
+}
+
+.first {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstText {
+    position: relative;
+    z-index: 3;
+    width: 50%;
+    color: #fff;
+    font-size: 3rem;
+    margin-right: 25%;
+}
+
+.firstImage {
+    height: 150vh;
+    width: 45%;
+    margin-left: 23%;
+    position: absolute;
+    right: 0;
+    top: 107vh;
+}
+
+.second {
+    width: 100%;
+    height: 115vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondText {
+    position: relative;
+    z-index: 3;
+    width: 50%;
+    color: #fff;
+    font-size: 3rem;
+    margin-left: 30vw;
+    margin-top: 50px;
+}
+
+.secondImage {
+    height: 140vh;
+    width: 45%;
+    position: absolute;
+    left: -130px;
+    top: 250vh;
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    border: 1px solid purple;
+    cursor: pointer;
+}
+
+.borders {
+    height: auto;
+    position: absolute;
+    background-image: url(../assets/borders.png);
+    top: 0;
+    margin-bottom: 500px;
+}
+
+@media screen and (max-width: 1366px) {
+
+    .headerText {
+        font-size: 10rem;
+    }
+
+    .firstText {
+        margin-bottom: 290px;
+    }
+
+    .firstImage {
+        height: 130vh;
+        top: 95vh;
+    }
+
+    .borders {
+        width: 100%;
+        background-image: url(../assets/borders-s.png);
+        background-size: contain;
+    }
+
+    
+}
+
+
