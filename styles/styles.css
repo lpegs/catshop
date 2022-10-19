@@ -110,10 +110,44 @@ body {
 }
 
 .footer {
+    position: relative;
     width: 100%;
-    height: 20vh;
-    border: 1px solid purple;
-    cursor: pointer;
+    height: 48vh;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    height: 48vh;
+}
+
+.madeText {
+    font-size: 2rem;
+    color: black;
+    width: 50%;
+    margin-top: 170px;
+}
+
+.footerImage {
+    height: 200px;
+    margin-top: 50px;
+}
+
+.footerFooter {
+    text-align: center;
+    max-height: 16px;
+}
+
+.footerFooterText {
+    font-size: 1rem;
+    text-wrap: none;
 }
 
 .borders {
@@ -131,17 +165,26 @@ body {
     }
 
     .firstText {
-        margin-bottom: 290px;
+        margin-top: 200px;
     }
 
     .firstImage {
-        height: 130vh;
-        top: 95vh;
+        height: 160vh;
+        top: 110vh;
     }
+
+    .secondText {
+        margin-top: 260px;
+    }
+
+    .secondImage {
+        height: 150vh;
+        margin-top: 100px;
+    }
+
 
     .borders {
         width: 100%;
-        background-image: url(../assets/borders-s.png);
         background-size: contain;
     }
 
