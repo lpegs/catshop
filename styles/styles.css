@@ -48,11 +48,16 @@ body {
     flex-wrap: wrap;
     text-align: center;
     margin-right: 45%;
+    z-index: 9999;
+    animation-name: opacity;
+    animation-duration: 7s;
 }
 
 .headerImage {
     height: 90%;
     margin-left: 23%;
+    animation-name: headerCat;
+    animation-duration: 7s;
 }
 
 .first {
@@ -71,6 +76,8 @@ body {
     color: #fff;
     font-size: 3rem;
     margin-right: 25%;
+    animation-name: opacity-zero-hundred;
+    animation-duration: 3s;
 }
 
 .firstImage {
@@ -99,6 +106,8 @@ body {
     font-size: 3rem;
     margin-left: 30vw;
     margin-top: 50px;
+    animation-name: opacity-zero-hundred;
+    animation-duration: 3s;
 }
 
 .secondImage {
@@ -156,6 +165,43 @@ body {
     background-image: url(../assets/borders.png);
     top: 0;
     margin-bottom: 500px;
+}
+
+@keyframes headerCat {
+    0% {
+        margin-left: 40px;
+        opacity: 0%;
+    }
+    75% {
+        margin-left: 40px;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0%;
+    }
+    90% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes opacity-zero-hundred {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 @media screen and (max-width: 1366px) {
